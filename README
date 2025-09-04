@@ -1,1 +1,72 @@
-Early Warning System For Climate Induced Diseases
+Early Warning System for Climate-Induced Diseases 🌍🩺
+Overview
+
+This project focuses on building a machine learning–powered Early Warning System to predict the risk of climate-induced diseases (such as Dengue, Malaria, and Respiratory Illnesses) using climate data, air quality indicators, and epidemiological records.
+
+The system leverages a data processing pipeline with robust preprocessing, class imbalance handling (SMOTE), and machine learning models to provide accurate predictions.
+
+Features 🚀
+
+📊 Data Pipeline: Handles collection, cleaning, preprocessing, and feature engineering for climate, air quality, and epidemiology data.
+
+⚖️ Imbalance Handling: Applied SMOTE (Synthetic Minority Oversampling Technique) to balance minority disease outbreak classes.
+
+🤖 Models Used:
+
+Random Forest Classifier
+
+Random Forest Regressor (for severity prediction)
+
+Hyperparameter tuning for performance optimization
+
+🖥️ User Interface: Prototype real-time system for monitoring outbreak risk.
+
+Tech Stack & Libraries 🛠️
+
+Python (core language)
+
+Data Processing: pandas, numpy
+
+Visualization: matplotlib, seaborn
+
+Machine Learning: scikit-learn, xgboost
+
+Imbalance Handling: imblearn (SMOTE)
+
+Pipeline Building: scikit-learn Pipelines for preprocessing and model training
+
+Environment: Jupyter Notebook / Python scripts
+
+Methodology 🔬
+
+Data Collection: Integrated datasets covering climate (temperature, humidity, rainfall), air quality (PM2.5, PM10, CO, O₃, NO₂), and epidemiological records.
+
+Preprocessing:
+
+Reindexed time series to continuous daily values
+
+Handled missing values and outliers
+
+Normalized/standardized features
+
+Feature Engineering: Created lag features, moving averages, and climate-health interaction variables.
+
+Model Training:
+
+Trained baseline models using Random Forests
+
+Applied SMOTE to resolve imbalance issues
+
+Tuned hyperparameters via GridSearchCV
+
+Evaluation: Assessed using accuracy, F1-score, precision-recall metrics for classification and RMSE for regression.
+
+Results 📈
+
+Improved classification performance by handling imbalance with SMOTE.
+
+Random Forest models provided robust performance across both classification and regression tasks.
+
+Demonstrated potential for real-time disease outbreak risk monitoring using AI + IoT pipelines.
+
+👉 Future scope: Integration with IoT devices for real-time environmental data collection and deployment as a web-based dashboard for public health officials.
